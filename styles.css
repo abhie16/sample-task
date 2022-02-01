@@ -1,0 +1,141 @@
+@media (min-width: 400px) {
+    .carousel-section .carousel_item img{
+        max-width: 300px;
+        width: 100%;
+        height: 156px;
+    }
+
+}
+
+body{
+    background: linear-gradient(
+        to bottom right, #FF9E68, #FF68DE
+    );
+    }
+    
+h1{
+text-align: center;
+}
+
+/* form-section */
+    h2{
+      font-size: 40px;
+      padding-top: 2%;
+      text-align: center;
+      font-family: 'Montserrat', sans-serif;
+    }
+    
+    input,label{
+      margin: 10px;
+    }
+    
+    .seller-form-section{
+      font-family: 'Merriweather', serif;
+      padding: 3% 15%;
+    }
+    
+    .otp-section{
+      width: 50%;
+    }
+    
+    .otp{
+      border-top: none;
+      border-left: none;
+      border-right: none;
+      width: 20px;
+    }
+    
+    .otp-button{
+      border: none;
+      background-color: white;
+      color: #00cc00;
+      width: 50%;
+    }
+    .otp-button:hover{
+      color:#00e600;
+    }
+    
+    .submit-button{
+      border: grey;
+      border-radius: 5px;
+      background-color: #00cc00;
+      padding: 5px;
+      margin-left: 40%;
+      margin-right: 40%;
+       width: 20%;
+    }
+    .submit-button:hover{
+      background-color: #00e600;
+    }
+
+/* tab-section */
+
+ .tab-items{
+     border-radius: 3px;
+     margin: 10px;
+ }
+ .tab-items a{
+    padding: 5px;
+    text-decoration: none;
+ }
+
+.tab-items:hover{
+    background-color: aquamarine;
+}
+
+
+
+    /* carousel-section */
+
+    .carousel-div{
+        margin: 20px;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .carousel-section{
+        overflow: hidden;
+        max-width: 600px;
+        position: relative;
+    }
+
+    .carousel-section .carousel_item,
+    .carousel-section .carousel_hidden{
+        display: none;
+    }
+
+    .carousel-section .carousel_item img{
+        max-width: 600px;
+        width: 100%;
+        height: 312px;
+    }
+
+    .carousel-section .carousel_active{
+        display: block;
+        animation: moving 0.5s;
+    }
+
+    .carousel-section .action{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .carousel-section .action button{
+        border-radius: 50px;
+        border: none;
+        font-weight: bold;
+        cursor: pointer;
+        width: 40px;
+        height: 40px;
+        margin: 0 10px;
+    }
+
+@keyframes moving {
+0%{opacity: 0;}
+100%{opacity: 1;}
+}
